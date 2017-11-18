@@ -1,0 +1,7 @@
+.idea/
+.git-credentials
+.htaccess
+.nginx
+vendor/
+description.pdf
+app/config/config.php

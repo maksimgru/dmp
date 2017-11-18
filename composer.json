@@ -1,0 +1,19 @@
+{
+    "name": "mdev/dmp",
+    "description": "DMP - Data Management Platform",
+    "type": "test project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maksim Petrenko",
+            "email": "maksimgru@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "": "app/"
+        }
+    }
+}

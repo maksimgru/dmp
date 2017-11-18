@@ -1,0 +1,441 @@
+/**
+ * Reset All
+ *
+ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+menu,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+:focus {
+    outline: 0;
+}
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+html {
+    height: 100%;
+}
+article,
+aside,
+audio,
+canvas,
+datalist,
+details,
+figcaption,
+figure,
+footer,
+header,
+keygen,
+mark,
+menu,
+meter,
+nav,
+output,
+progress,
+rp,
+rt,
+ruby,
+section,
+source,
+summary,
+time,
+video,
+wbr {
+    display: block;
+}
+
+
+
+
+
+
+
+
+/**
+* General
+*
+*/
+body {
+    font: 12px/14px Arial, Tahoma, Verdana, sans-serif;
+    width: 100%;
+    height: 100%;
+    line-height: 20px;
+    background: #efefef url('../images/bg.png');
+}
+a {
+    color: #014380;
+    outline: none;
+    text-decoration: underline;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+}
+a:hover {
+    color: #0000ff;
+    text-decoration: none;
+}
+p {
+    margin: 0 0 20px 0;
+}
+img {
+    border: none;
+}
+input {
+    vertical-align: middle;
+}
+#wrapper {
+    max-width: 1170px;
+    margin: 3em auto 0;
+    min-height: 100%;
+    height: auto !important;
+    /*height: 100%;*/
+    background: #fff;
+    box-shadow: 0 0 20px 0 #bbb;
+}
+.text-justify {
+    text-align: justify;
+}
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.fn{
+    float:none;
+}
+.clear{
+    clear:both;
+}
+.hidden{
+    display: none !important;
+}
+.w10{
+    width:10%;
+}
+
+
+
+
+
+
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+    min-height: 50px;
+    position: relative;
+    padding: 1rem 0 0 0;
+    margin: 0 auto 20px;
+    color: #333;
+    background: #fff;
+    overflow: hidden;
+}
+#header h1 {
+    font-size: 3em;
+    line-height: 1em;
+}
+#header h2 {
+    font-size: 2em;
+    line-height: 2em;
+}
+#header #top-nav {
+    color: #fff;
+    margin: 1rem auto 0;
+    padding: 0;
+    overflow: hidden;
+    background: #333;
+}
+#header #top-nav ul li a,
+#header #top-nav a {
+    color:#fff;
+    text-decoration: none;
+}
+#header #top-nav ul li,
+#header #top-nav ul li a {
+    display: inline-block;
+}
+#header #top-nav ul li a{
+    padding: 0.5em 1em;
+    background: #444;
+}
+#header #top-nav ul li a:hover,
+#header #top-nav ul li a:focus,
+#header #top-nav ul li a.active{
+    background: #999;
+}
+
+
+
+
+
+
+
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+#content {
+    margin: auto;
+    padding: 0 1em 120px 1em;
+    overflow: hidden;
+}
+
+.welcome{
+    font-size: 2em;
+    line-height: 1.4em;
+}
+
+/* FORM */
+#add-user-form {
+    width: 50%;
+}
+#add-user-form .form-control{
+    width: 100%;
+}
+form {
+    margin: 20px auto;
+}
+form label{
+    font-weight: bold;
+}
+form textarea{
+    resize: vertical;
+    height: 10em;
+}
+form .form-row{
+    margin: 0 0 4em 0;
+    padding: 1em;
+    background: #ccc;
+}
+form .form-row .item{
+    margin: 1em 0;
+    overflow: hidden;
+}
+form .form-control{
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+form .form-control[type="submit"] {
+    padding: 0.5em 1em;
+    font-size: 2em;
+    cursor: pointer;
+}
+form .form-control[type="number"] {
+    width:7em;
+}
+form .form-control[type="checkbox"],
+form .form-control[type="radio"] {
+    display: inline-block !important;
+    width: 2em !important;
+    height: 2em !important;
+}
+form .form-control[type="submit"] {
+    display: inline !important;
+    width: auto !important;
+}
+form .form-control.invalid{
+    border: 1px solid red;
+}
+form .form-control:focus{
+    -webkit-box-shadow: 0 0 10px #006899;
+    -moz-box-shadow: 0 0 10px #006899;
+    box-shadow: 0 0 10px #006899;
+}
+form .form-control.invalid:focus{
+    -webkit-box-shadow: 0 0 10px red;
+    -moz-box-shadow: 0 0 10px red;
+    box-shadow: 0 0 10px red;
+}
+form .error{
+    color: red;
+}
+form .success{
+    color: green;
+}
+form .form-message{
+    font-size: 2em;
+    line-height: 1.4em;
+    margin: 1em 0;
+}
+
+
+/* TABLE */
+table {
+    width:100%;
+    word-break: break-all;
+}
+table thead th {
+    width: 5%;
+    padding: 0.5em;
+    color: #fff;
+    text-transform: uppercase;
+    background: #999;
+    border: 1px solid #666;
+}
+table thead th a,
+table thead th a:hover,
+table thead th a:focus{
+    display: block;
+    font-size: 1em;
+    color:#e2e2e2;
+    text-decoration: none;
+}
+table thead th a[href]:hover,
+table thead th a[href]:focus{
+    text-decoration: underline;
+}
+table thead th a[href]:hover,
+table thead th a[href]:focus,
+table thead th.active a{
+    color:#fff;
+    font-weight: bold;
+}
+table thead th.order a{
+    text-decoration: underline;
+    letter-spacing: 0;
+}
+table thead th a + .arrow {
+    visibility: hidden;
+    font-size: 2em;
+}
+table thead th.order:not(.active) a:hover  + .arrow,
+table thead th.active a + .arrow {
+    visibility: visible;
+}
+table thead th.order:not(.active) a:hover + .arrow:after,
+table thead th.active.asc a + .arrow:after{
+    content:'\2191';
+}
+table thead th.active.desc a + .arrow:after{
+    content:'\2193';
+}
+table tr td {
+    padding: 0.5em 1em;
+    border: 1px solid #ccc;
+}
+
+table tr td ul {
+    list-style: inside none;
+}
+table tr td ul > li > ul {
+    list-style-type: disc;
+}
+
+
+
+
+
+
+
+
+
+
+    /* Footer
+    -----------------------------------------------------------------------------*/
+#footer {
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100px;
+    max-width: 1170px;
+    margin: -100px auto 3em;
+    padding: 2em 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #bbb;
+    background: #333;
+}
+#footer a{
+   color: #7d7d7d;
+}
+#footer a:hover,
+#footer a:focus{
+    color: #fff;
+}
